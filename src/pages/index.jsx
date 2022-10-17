@@ -1,11 +1,14 @@
 import React from "react";
-import Layout from "../components/Layout";
+import NavBar from "../components/NavBar";
 
 function App() {
   return (
-    <Layout>
-      <div className="p-5 font-black">index</div>
-    </Layout>
+    <>
+      <NavBar />
+      <div className="p-5 font-blue">index</div>
+
+  
+    </>
   );
 }
 

@@ -1,13 +1,13 @@
 import React from "react";
 import NavScroll from "./NavBar";
 
-function Layout({ children }) {
+function Layout() {
   return (
     <div>
       <div>
+        <NavBar/>
         <NavScroll />
       </div>
-      {children}
     </div>
   );
 }
