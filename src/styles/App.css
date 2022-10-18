@@ -2,27 +2,33 @@
   text-align: center;
 }
 
-.search{
+.search {
   margin-right: 20rem;
 }
 
-.home{
+.home {
   margin-right: 1rem;
 }
 
-.love{
+.love {
   margin-right: 1rem;
 }
 
-.notif{
+.notif {
   margin-right: 10rem;
 }
 
-.profile{
+.profile {
   margin-right: 4rem;
 }
 
-.background-nav{
-  border: 2px solid #FA8B78;
-  background-color: #FA8B78;
+.background-nav {
+  border: 2px solid #fa8b78;
+  background-color: #fa8b78;
+}
+
+.fotoprofil {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
 }
