@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  background-color: #FBF8F8;
+}
+
+.form-container {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  font-family: "Poppins";
+}
+
+.form-box {
+  max-width: 800px;
+  padding: 30px;
+  box-shadow: rgb(86, 86, 88) 3px 3px 4px 2px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.form-container .title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.username {
+  margin-bottom: 20px;
+  box-shadow: rgb(86, 86, 88) 0px 2px 3px;
+  height: 38px;
+  font-size: 12px;
+}
+
+.password {
+  margin-bottom: 5px;
+  box-shadow: rgb(86, 86, 88) 0px 2px 3px;
+  height: 38px;
+  font-size: 12px;
+}
+
+.button .submit {
+  width: 390px;
+  box-shadow: rgb(86, 86, 88) 3px 3px 2px;
+  background-color: #FDC8C0;
+  border: none;
+  margin-top: 30px;
+}
+
+.submit:hover {
+  background-color: #454152 !important;
+}
+
+.signup {
+  font-size: 20px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.sign{
+    padding-left: 80px;
+}
+
+.form-signup {
+    box-shadow: rgb(86, 86, 88) 3px 3px 4px 2px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    max-width: 450px;
+    border-radius: 20px;
+  }

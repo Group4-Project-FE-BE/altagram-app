@@ -42,7 +42,7 @@ function NavScroll() {
                 <NavDropdown.Item href="#action3">DASHBOARD</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">PROFIL</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">LOG OUT</NavDropdown.Item>
+                <NavDropdown.Item href="/login">LOG OUT</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
