@@ -19,8 +19,6 @@ const CardComent = ({ slides }) => {
     borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    // backgroundColor: `blue`,
-    // backgroundImage: `url(${slides[currentIndex].url})`,
   };
 
   const LeftArrowStyles = {
@@ -59,6 +57,10 @@ const CardComent = ({ slides }) => {
     width: "auto",
   };
 
+  const backgroundPostingan = {
+    backgroundColor: `#6768AB`,
+  };
+
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -82,15 +84,12 @@ const CardComent = ({ slides }) => {
       <div style={slideStyle} className="d-flex justify-content-center align-items-center">
         <div>
           <div className="row" style={slideStyle}>
-            <div className="grid offset-1 col-5 bg-black p-0">
+            <div className="grid offset-1 col-5 p-0" style={backgroundPostingan}>
               <div className="row postinganFoto">
                 <img src={`${slides[currentIndex].url}`} style={postinganFoto} alt="postingan" />
               </div>
             </div>
-            <div className="grid col-5 border bg-white p-0">
-              {/* <div className="d-flex align-self-end">
-                
-              </div> */}
+            <div className="grid col-5 bg-white p-0">
               <div class="d-flex align-items-start flex-column bd-highlight mb-3 h-100">
                 <div class=" bd-highlight w-100">
                   <div>

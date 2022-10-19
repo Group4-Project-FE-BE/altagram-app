@@ -1,10 +1,4 @@
-function CardPost() {
-  const Card = {
-    border: "solid 2px blue",
-    marginTop: "25px",
-    margin: "10px",
-  };
-
+function CardPost(props) {
   const ImagePost = {
     padding: "0.2em",
     backgroundColor: "#FDC8C0",
@@ -15,15 +9,10 @@ function CardPost() {
     boxShadow: "rgb(86, 86, 88) 3px 3px 2px 2px",
   };
 
-  const NavList = {
-    // borderRadius: "5% 5% 0% 0%",
-    // border: "solid  blue",
-  };
-
   return (
-    <div onClick="" className="flex h-full w-full justify-center rounded-5 m-2" style={ImagePost}>
-      <div>
-        <div className="d-flex align-items-center p-2" style={NavList}>
+    <div className="flex h-full w-full justify-center rounded-5 m-2" style={ImagePost}>
+      <div onClick={props.onNavigate}>
+        <div className="d-flex align-items-center p-2">
           <div className="me-3">
             <img className="fotoprofil m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto rpofil" />
           </div>

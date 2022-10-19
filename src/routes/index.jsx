@@ -21,7 +21,7 @@ function App() {
         <Route path="/profile" element={<EditProfile />} />
         <Route path="/listposting" element={<ListPosting />} />
         <Route path="/EditPost" element={<EditPost />} />
-        <Route path="/PageComent" element={<PageComent />} />
+        <Route path="/Detail/:id_post" element={<PageComent />} />
         {/* <Route path="/Carrousel" element={<Carrousel />} /> */}
         <Route path="*" element={<div>404 Error Masse</div>} />
       </Routes>

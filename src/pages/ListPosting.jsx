@@ -5,14 +5,13 @@ import Form from "react-bootstrap/Form";
 import "../styles/ListPosting.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { WithRouter } from "utils/Navigation";
 
 import { useTitle } from "utils/redux/UseTitle";
 
 import CardPost from "components/CardPost";
 
-const ListPosting = () => {
+const ListPosting = (props) => {
   useTitle("List Posting | Altagram");
 
   return (
@@ -31,28 +30,28 @@ const ListPosting = () => {
           </div>
           <Row>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
             <div className="grid col-3">
-              <CardPost />
+              <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
           </Row>
         </Container>
@@ -61,4 +60,4 @@ const ListPosting = () => {
   );
 };
 
-export default ListPosting;
+export default WithRouter(ListPosting);
