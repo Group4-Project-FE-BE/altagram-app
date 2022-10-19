@@ -4,66 +4,48 @@ body {
   background-color: #FBF8F8;
 }
 
-.form-container-register {
-  display: flex;
-  width: 100vw;
-  height: 80vh;
-  font-family: "Poppins";
+.colo{
+  margin-top: 20px;
+  background-image: url('../assets/cat.png');
 }
 
-.form-box-regis {
-  max-width: 800px;
-  padding: 30px;
-  box-shadow: rgb(86, 86, 88) 3px 3px 4px;
-  border-radius: 8px;
-  background-color: #e7e5e5;
+.coloo{
+  background-color: white;
+  box-shadow: purple;
 }
 
-.register {
-  padding-left: 125px;
-  font-family: "Poppins";
-  font-size: 40px;
-  font-weight: bold;
+.border-form{
+  border:solid 2px white;
+  height: 41rem;
+  margin-left: 8rem;
+}
+
+.sign{
+  margin-bottom: 2rem;
+}
+
+.form-register{
+  margin-bottom: 5rem;
+}
+
+.form-check{
+  font-size: 12px;
+  text: right;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
 }
 
-.form-container-register .start {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 1px;
+.box{
+  border:1px solid black;
 }
 
-.sub-title {
-  margin-bottom: 1px;
-  padding-top: 1px;
-}
-
-.email-regis {
-  margin-bottom: 2px;
-  box-shadow: rgb(86, 86, 88) 0px 2px 3px;
-  height: 38px;
-  font-size: 12px;
-}
-
-.password-regis {
-  box-shadow: rgb(86, 86, 88) 0px 2px 3px;
-  height: 38px;
-  font-size: 12px;
-}
-
-.middle {
-  margin-bottom: 20px;
-}
-
-.button-regis .sign {
-  width: 390px;
+.button .submit {
+  width: 660px;
   box-shadow: rgb(86, 86, 88) 3px 3px 2px;
-  background-color: #00c897;
-  margin-bottom: 20px;
+  background-color: #FDC8C0;
   border: none;
+  margin-top: 30px;
 }
 
-.button-regis .sign:hover {
-  background-color: #3ebe9e !important;
+.submit:hover {
+  background-color: #454152 !important;
 }

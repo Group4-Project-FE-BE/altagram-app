@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+  background-color: #FBF8F8;
+}
+
+.title{
+    margin-left: 4rem;
+}
+.frame{
+    margin-left: 65px;
+    width: 76rem;
+    background-color: #FFFFFF;
+    box-shadow: rgb(86, 86, 88) 3px 3px 2px 2px;
+}
+
+.button{
+    margin-left: 55rem;
+    padding-bottom: 30px;
+}
+
+.button-save{
+    border: 2px solid black;
+    margin-right: 4rem;
+    width: 100px;
+    box-shadow: rgb(86, 86, 88) 3px 3px 2px;
+    background-color: #6768AB;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.save{
+    font-weight: bold;
+}
+.save:hover {
+    color: #FBF8F8 !important;
+  }
+
+.button-save:hover {
+    background-color: #454152 !important;
+  }
+
+.button-delete{
+    margin-right: 4rem;
+    width: 100px;
+    box-shadow: rgb(86, 86, 88) 3px 3px 2px;
+    background-color: #FDC8C0;
+    border: none;
+    border-radius: 20px;
+}
+
+.delete{
+    font-weight: bold;
+    color: black;
+}
+
+.delete:hover {
+    color: #FFFFFF !important;
+  }
+
+.button-delete:hover {
+    background-color: #454152 !important;
+  }

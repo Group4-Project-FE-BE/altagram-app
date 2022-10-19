@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "pages";
 import CreatePost from "pages/CreatePost";
 import Login from "pages/Login";
+import Register from "pages/Register";
+import EditProfile from "pages/EditProfile";
+import ListPosting from "pages/ListPosting";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/CreatePost" element={<CreatePost />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<EditProfile />} />
+        <Route path="/listposting" element={<ListPosting />} />
         <Route path="*" element={<div>404 Error Masse</div>} />
       </Routes>
     </BrowserRouter>

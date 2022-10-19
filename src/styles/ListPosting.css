@@ -1,0 +1,18 @@
+.search-list {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+
+  .col-list{
+    border: solid 2px blue;
+    margin-top: 25px;
+    margin: 10px;
+    /* box-shadow: rgb(86, 86, 88) 3px 3px 2px 2px; */
+  }
+
+.image-list{
+    border: solid 2px blue;
+    border-radius: 20px;
+    box-shadow: rgb(86, 86, 88) 3px 3px 2px 2px;
+}
