@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "pages";
 import CreatePost from "pages/CreatePost";
 import Login from "pages/Login";
+import Register from "pages/Register";
+import EditProfile from "pages/EditProfile";
+import ListPosting from "pages/ListPosting";
 import EditPost from "pages/EditPost";
 import PageComent from "pages/PageComent";
 
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/CreatePost" element={<CreatePost />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<EditProfile />} />
+        <Route path="/listposting" element={<ListPosting />} />
         <Route path="/EditPost" element={<EditPost />} />
         <Route path="/PageComent" element={<PageComent />} />
         {/* <Route path="/Carrousel" element={<Carrousel />} /> */}

@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sugges{
+  color: #C6BEBE;
+  margin-bottom: 20px;
+}
+
+.account{
+  padding-bottom: 15px;
+}
+
+.image{
+  box-shadow: rgb(86, 86, 88) 3px 3px 2px 2px;
+}
+
+.App {
+  text-align: center;
+}
+
+.search {
+  margin-right: 20rem;
+}
+
+.home {
+  margin-right: 1rem;
+}
+
+.love {
+  margin-right: 1rem;
+}
+
+.notif {
+  margin-right: 10rem;
+}
+
+.profile {
+  margin-right: 4rem;
+}
+
+.background-history {
+  border: 2px solid #FBF8F8;
+  background-color: #FBF8F8;
+}
+
+.fotoprofil {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+}
+
