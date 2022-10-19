@@ -7,6 +7,8 @@ import Login from "pages/Login";
 import Register from "pages/Register";
 import EditProfile from "pages/EditProfile";
 import ListPosting from "pages/ListPosting";
+import EditPost from "pages/EditPost";
+import PageComent from "pages/PageComent";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<EditProfile />} />
         <Route path="/listposting" element={<ListPosting />} />
+        <Route path="/EditPost" element={<EditPost />} />
+        <Route path="/PageComent" element={<PageComent />} />
+        {/* <Route path="/Carrousel" element={<Carrousel />} /> */}
         <Route path="*" element={<div>404 Error Masse</div>} />
       </Routes>
     </BrowserRouter>
