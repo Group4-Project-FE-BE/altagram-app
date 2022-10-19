@@ -32,3 +32,18 @@
   height: 2em;
   border-radius: 100%;
 }
+
+.fotoprofilcoment {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+}
+
+.btn-save {
+  background-color: #fdc8c0;
+  border: 0;
+}
+
+.caption {
+  background-color: #fcedeb;
+}

@@ -8,6 +8,7 @@ import { AiFillHome, AiOutlineHeart } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { FiPlusSquare } from "react-icons/fi";
 
 function NavScroll() {
   return (
@@ -23,7 +24,7 @@ function NavScroll() {
           <Navbar.Collapse id="navbarScroll">
             <Form className="search d-flex">
               <div>
-                <input type="search" placeholder="Search" className="custom-search" />
+                <input type="search" placeholder="Search" className="custom-search rounded-pill border-0 p-2 m-1" />
                 <BsSearch style={{ width: "20px", height: "20px" }} />
               </div>
             </Form>
@@ -36,11 +37,11 @@ function NavScroll() {
                 <AiOutlineHeart style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <Nav.Link href="/CreatePost" className="notif">
-                <IoMdNotificationsOutline style={{ width: "26px", height: "26px" }} />
+                <FiPlusSquare style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <NavDropdown title="Profile" id="navbarScrollingDropdown" className="profile">
-                <NavDropdown.Item href="#action3">DASHBOARD</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">PROFIL</NavDropdown.Item>
+                <NavDropdown.Item href="#action1">DASHBOARD</NavDropdown.Item>
+                <NavDropdown.Item href="#action2">PROFIL</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/login">LOG OUT</NavDropdown.Item>
               </NavDropdown>
