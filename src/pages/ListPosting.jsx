@@ -8,7 +8,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
+import { useTitle } from "utils/redux/UseTitle";
+
 const ListPosting = () => {
+  useTitle("List Posting | Altagram");
   return (
     <>
       <NavBar />
