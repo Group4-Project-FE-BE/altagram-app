@@ -1,7 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import "../styles/Login.css";
 
-
 const Login = () => {
   return (
     <div>
@@ -20,19 +19,20 @@ const Login = () => {
             Forgot <a href="#">password?</a>
           </p>
           <Form.Group className="button">
-            <Button className="submit text-black">
-              Sign In
-            </Button>
+            <Button className="submit text-black">Sign In</Button>
           </Form.Group>
         </Form>
       </main>
       <div className="form-container-signup">
         <Form className="form-signup m-auto">
           <p className="signup">
-            Dont have an account? <a className="sign" href="#">Sign up</a>
+            Dont have an account?{" "}
+            <a className="sign" href="#">
+              Sign up
+            </a>
           </p>
         </Form>
-        </div>
+      </div>
     </div>
   );
 };
