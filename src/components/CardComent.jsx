@@ -123,8 +123,8 @@ const CardComent = ({ slides }) => {
                     </div>
                   </div> */}
                 </div>
-                <div class="mt-auto p-2 bd-highlight w-100">
-                  <textarea className="w-100 border-0 rounded" id="comment" placeholder="coment bro"></textarea>
+                <div class="mt-auto p-2 bd-highlight w-100 border rounded m-1">
+                  <textarea className="w-100 border-0 rounded" id="comment" placeholder="tambahkan komentar"></textarea>
                 </div>
               </div>
             </div>
