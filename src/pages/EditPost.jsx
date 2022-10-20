@@ -7,8 +7,10 @@ import NavBar from "components/NavBar";
 import Button from "react-bootstrap/Button";
 import { ImBin2 } from "react-icons/im";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { useTitle } from "utils/redux/UseTitle";
 
 function EditPost() {
+  useTitle("Edit Post | Altagram");
   return (
     <div>
       <NavBar />

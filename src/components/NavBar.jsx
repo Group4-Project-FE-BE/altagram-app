@@ -22,26 +22,26 @@ function NavScroll() {
         <div>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Form className="search d-flex">
-              <div>
-                <input type="search" placeholder="Search" className="custom-search rounded-pill border-0 p-2 m-1" />
-                <BsSearch style={{ width: "20px", height: "20px" }} />
-              </div>
-            </Form>
+            <form class="d-flex search" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn" type="submit">
+                <BsSearch />
+              </button>
+            </form>
 
             <Nav className="button-nav me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link href="#action1" className="home">
+              <Nav.Link href="/" className="home">
                 <AiFillHome style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
-              <Nav.Link href="#action2" className="love">
+              <Nav.Link href="/list-posting" className="love">
                 <AiOutlineHeart style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
-              <Nav.Link href="/CreatePost" className="notif">
+              <Nav.Link href="/create-post" className="notif">
                 <FiPlusSquare style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <NavDropdown title="Profile" id="navbarScrollingDropdown" className="profile">
-                <NavDropdown.Item href="#action1">DASHBOARD</NavDropdown.Item>
-                <NavDropdown.Item href="#action2">PROFIL</NavDropdown.Item>
+                <NavDropdown.Item href="/">DASHBOARD</NavDropdown.Item>
+                <NavDropdown.Item href="/profile">PROFIL</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/login">LOG OUT</NavDropdown.Item>
               </NavDropdown>

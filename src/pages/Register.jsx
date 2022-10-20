@@ -2,20 +2,23 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import "../styles/Register.css";
 import Image from 'react-bootstrap/Image';
+import { useTitle } from "utils/redux/UseTitle";
+
 
 const Register = () => {
+  useTitle("Register | Altagram");
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="colo col-4">
           <p className="text-right mt-2">
-            Have an account? <a href="#">Login</a>
+            Have an account? <a href="/login">Login</a>
           </p>
           <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="images row"></Image>
         </div>
         <div className="coloo col-8">
           <div className="border-form d-flex flex-column justify-content-center h-custom-2 w-75 pt-4">
-          <h1 className="sign text-center">Sign In</h1>
+            <h1 className="sign text-center">Sign In</h1>
             <Form className="form-register">
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>

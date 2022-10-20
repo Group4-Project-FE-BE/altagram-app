@@ -15,14 +15,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/CreatePost" element={<CreatePost />} />
+        <Route path="/create-post" element={<CreatePost />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<EditProfile />} />
-        <Route path="/listposting" element={<ListPosting />} />
-        <Route path="/EditPost" element={<EditPost />} />
-        <Route path="/PageComent" element={<PageComent />} />
-        {/* <Route path="/Carrousel" element={<Carrousel />} /> */}
+        <Route path="/list-posting" element={<ListPosting />} />
+        <Route path="/edit" element={<EditPost />} />
+        <Route path="/detail/:id_post" element={<PageComent />} />
         <Route path="*" element={<div>404 Error Masse</div>} />
       </Routes>
     </BrowserRouter>
