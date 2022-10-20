@@ -84,16 +84,16 @@ const CardComent = ({ slides }) => {
       <div style={slideStyle} className="d-flex justify-content-center align-items-center">
         <div>
           <div className="row" style={slideStyle}>
-            <div className="grid offset-1 col-5 p-0" style={backgroundPostingan}>
+            <div className="grid offset-lg-1 col-lg-5 p-0 " style={backgroundPostingan}>
               <div className="row postinganFoto">
                 <img src={`${slides[currentIndex].url}`} style={postinganFoto} alt="postingan" />
               </div>
             </div>
-            <div className="grid col-5 bg-white p-0">
-              <div class="d-flex align-items-start flex-column bd-highlight mb-3 h-100">
+            <div className="grid col-lg-5 bg-white p-lg-0">
+              <div class="d-flex align-items-start flex-column bd-highlight mb-lg-3 h-100">
                 <div class=" bd-highlight w-100">
                   <div>
-                    <div className="border-b m-0 shadow d-flex justify-content-between align-items-center" style={navPost}>
+                    <div className="border-b m-lg-0 shadow d-flex justify-content-between align-items-center" style={navPost}>
                       <div className="d-flex align-items-center m-3">
                         <div className="me-3">
                           <img className="fotoprofilcoment m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto profil" />
