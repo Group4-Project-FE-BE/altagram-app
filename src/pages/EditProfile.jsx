@@ -1,101 +1,92 @@
-import React from "react";
-import Navbar from "components/NavBar";
-import Button from "react-bootstrap/Button";
-import "../styles/EditProfile.css";
-import Form from "react-bootstrap/Form";
-import Image from "react-bootstrap/Image";
-import { Card } from "react-bootstrap";
-import { WithRouter } from "utils/Navigation";
-import { useTitle } from "utils/redux/UseTitle";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Profile from "../components/Profile";
 
-const EditProfile = () => {
-  useTitle("Edit Profil | Altagram");
+function EditProfile() {
+  const urlApi = "https://virtserver.swaggerhub.com/Group4-Project-FE-BE/openapi_project2_team4/1.0.0/users";
+  const [profiles, setProfile] = useState([]);
+  const navigate = useNavigate();
+
+  
+  const getProfile = async () => {
+    await axios
+      .get(urlApi, {
+        headers: { Authorization: "Bearer " },
+      })
+      .then((res) => {
+        setProfile(res.data);
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
+  };
+
+  useEffect(() => {
+    getProfile();
+  }, []);
+
+  const handleEdit = (data) => {
+    navigate(`/editprofile/${data.id}`, {
+      state: {
+        id: data.id,
+        username: data.username,
+        name: {
+          firstname: data.name.firstname,
+          lastname: data.name.lastname,
+        },
+        email: data.email,
+        phone: data.phone,
+        gender: {
+          female: data.gender.female,
+          male: data.gender.male,
+        },
+        location: data.location,
+        bio: data.bio,
+        password: {
+          newpassword: data.password.newpassword,
+          confirmpassword: data.password.confirmpassword,
+        },
+      },
+    });
+  };
+  const handleCreate = (data) => {
+    navigate(`/create ${data.id}`, {
+      state: {
+        id: data.id,
+      },
+    });
+  };
+
+  const handleUser = (data) => {
+    navigate(`/user/${data.id}`, {
+      state: {
+        id: data.id,
+      },
+    });
+  };
+  const handleRemove = (data) => {};
 
   return (
     <>
-      <Navbar />
-      <div className="container-fluid">
-        <div>
-          <h1 className="title">Edit Profile</h1>
-        </div>
-        <div className="frame row">
-          <div className="col">
-            <Card className="shadow-lg justify-center align-self-center col-4">
-              <Image src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-2.jpg" style={{ width: "10rem", height: "10rem" }} className="row mx-auto my-2 image-fluid"></Image>
-              <Form.Group controlId="formFile" className="mb-3">
-                <Form.Label>Upload Gambar</Form.Label>
-                <Form.Control type="file" />
-              </Form.Group>
-              Ukuran Maksimal Gambar adalah 1mb
-            </Card>
-            col 79.729-37.20
+      <section>
+        <Container className="my-5 px-auto rounded border-main justify-center align-items-center">
+          <div className="row mx-auto">
+            <Profile
+              username={profiles.username}
+              key={profiles.id}
+              onClickEdit={() => handleEdit(profiles)}
+              onClickCreate={() => handleCreate(profiles)}
+              onClickuser={() => handleUser(profiles)}
+              onClickRemove={() => handleRemove(profiles)}
+            />
+            ;
           </div>
-          <div className="col">
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="cattie" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="user@gmail.com" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Phone Number</Form.Label>
-                <Form.Control type="number" placeholder="Enter email" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Gender</Form.Label>
-                <Form.Select aria-label="Default select example">
-                  <option>Female</option>
-                  <option value="1">Male</option>
-                </Form.Select>
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Location</Form.Label>
-                <Form.Control type="text" placeholder="at bogor" />
-              </Form.Group>
-            </Form>
-          </div>
-
-          <div className="col">
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Bio</Form.Label>
-                <Form.Control type="text" placeholder="akun cattie" />
-              </Form.Group>
-
-              <div>
-                <h5>Change Password</h5>
-                <di>
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>New Password</Form.Label>
-                    <Form.Control type="password" placeholder="******" />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Confirm Password</Form.Label>
-                    <Form.Control type="password" placeholder="******" />
-                  </Form.Group>
-                </di>
-              </div>
-            </Form>
-          </div>
-          <div className="button">
-            <Button variant="primary" type="submit" className="button-save ">
-              <div className="save">Save</div>
-            </Button>
-            <Button variant="primary" type="submit" className="button-delete">
-              <div className="delete">Delete</div>
-            </Button>
-          </div>
-        </div>
-      </div>
+        </Container>
+      </section>
     </>
   );
-};
+}
 
-export default WithRouter(EditProfile);
+export default EditProfile;
