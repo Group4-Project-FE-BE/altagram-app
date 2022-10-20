@@ -8,8 +8,10 @@ import Button from "react-bootstrap/Button";
 import { BiImageAdd } from "react-icons/bi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import Form from "react-bootstrap/Form";
+import { useTitle } from "utils/redux/UseTitle";
 
 function CreatePosting() {
+  useTitle("Create Post | Altagram");
   return (
     <div>
       <NavBar />

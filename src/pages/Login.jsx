@@ -1,8 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 import "../styles/Login.css";
-
+import { useTitle } from "utils/redux/UseTitle";
 
 const Login = () => {
+  useTitle("Login | Altagram");
   return (
     <div>
       <main className="form-container">
@@ -20,19 +21,20 @@ const Login = () => {
             Forgot <a href="#">password?</a>
           </p>
           <Form.Group className="button">
-            <Button className="submit text-black">
-              Sign In
-            </Button>
+            <Button className="submit text-black">Sign In</Button>
           </Form.Group>
         </Form>
       </main>
       <div className="form-container-signup">
         <Form className="form-signup m-auto">
           <p className="signup">
-            Dont have an account? <a className="sign" href="#">Sign up</a>
+            Dont have an account?{" "}
+            <a className="sign" href="/register">
+              Sign up
+            </a>
           </p>
         </Form>
-        </div>
+      </div>
     </div>
   );
 };
