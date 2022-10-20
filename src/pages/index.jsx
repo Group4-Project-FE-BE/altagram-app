@@ -18,13 +18,15 @@ function Home(props) {
   useTitle("Home | Altagram");
   return (
     <>
-      <NavBar />
+      <NavBar onNavigate={() => props.navigate(`/Detail/coba`)} />
       <div className="container mt-5">
         <div className="row align-items-start">
           <div className="col-8">
             <div className="border">
-              <Header onNavigate={() => props.navigate(`/Detail/coba`)} />
-              <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="w-100" />
+              <Header />
+              <div>
+                <Image src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" className="w-100" />
+              </div>
             </div>
           </div>
           <div className="col-4">

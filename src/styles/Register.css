@@ -1,10 +1,10 @@
 html,
 body {
   height: 100%;
-  background-color: #FBF8F8;
+  background-color: #fbf8f8;
 }
 
-.images{
+.images {
   margin-top: 100px;
   margin-right: 20rem;
   /* background: url("https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png") no-repeat center center fixed; */
@@ -12,43 +12,43 @@ body {
   height: 50%;
 }
 
-.colo{
+.colo {
   margin-top: 20px;
 }
 
-.coloo{
+.coloo {
   background-color: white;
   box-shadow: purple;
 }
 
-.border-form{
-  border:solid 2px white;
+.border-form {
+  border: solid 2px white;
   height: 41rem;
   margin-left: 8rem;
 }
 
-.sign{
+.sign {
   margin-bottom: 2rem;
 }
 
-.form-register{
+.form-register {
   margin-bottom: 5rem;
 }
 
-.form-check{
+.form-check {
   font-size: 12px;
   text: right;
   padding-bottom: 10px;
 }
 
-.box{
-  border:1px solid black;
+.box {
+  border: 1px solid black;
 }
 
 .button-sign .submit {
-  width: 660px;
+  width: 100%;
   box-shadow: rgb(86, 86, 88) 3px 3px 2px;
-  background-color: #FDC8C0;
+  background-color: #fdc8c0;
   border: none;
   margin-top: 30px;
 }
