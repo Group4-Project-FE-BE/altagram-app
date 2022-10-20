@@ -1,29 +1,45 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTitle } from "utils/redux/UseTitle";
 
+import axios from "axios";
+
 import CardComent from "../components/CardComent";
+import Skeleton from "react-loading-skeleton";
 
 import { WithRouter } from "utils/Navigation";
 
 const PageComent = (props) => {
-  const slides = [
-    { url: "https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png", title: "Pretti" },
-    { url: "http://pintarmewarnai.com/wp-content/uploads/2019/09/Gambar-Mewarnai-Minion-5.jpg", title: "Alexa" },
-    { url: "https://www.99.co/blog/indonesia/wp-content/uploads/2022/08/Gambar-Masjid-Sederhana-1.jpg", title: "John" },
-    { url: "https://www.its.ac.id/international/wp-content/uploads/sites/66/2020/02/blank-profile-picture-973460_1280.jpg", title: "Rey" },
-    { url: "https://www.its.ac.id/international/wp-content/uploads/sites/66/2020/02/blank-profile-picture-973460_1280.jpg", title: "Jess" },
-  ];
+  const [datas, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [next, setNext] = useState(0);
+
+  useTitle("Post | Altagram");
 
   useEffect(() => {
     fetchData();
   }, []);
 
-  useTitle("Alexa | Altagram");
-
   function fetchData() {
-    const { id_post } = props.params;
+    axios
+      .get(`https://virtserver.swaggerhub.com/Group4-Project-FE-BE/openapi_project2_team4/1.0.0/postings?offset=20&limit=20`)
+      .then((res) => {
+        console.log(res);
+        const { data } = res.data;
+        const temp = [...datas];
+        temp.push(...data);
+        setData(temp);
+      })
+      .catch((err) => {
+        alert(err.toString());
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }
+  console.log(datas);
+
+  const slides = datas;
 
   const containerStyles = {
     width: `100em`,
@@ -33,9 +49,7 @@ const PageComent = (props) => {
 
   return (
     <div>
-      <div style={containerStyles}>
-        <CardComent slides={slides} />
-      </div>
+      <div style={containerStyles}>{loading ? <Skeleton /> : datas.map((datum) => <CardComent slides={slides} />)}</div>
     </div>
   );
 };
