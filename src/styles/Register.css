@@ -4,9 +4,16 @@ body {
   background-color: #FBF8F8;
 }
 
+.images{
+  margin-top: 100px;
+  margin-right: 20rem;
+  /* background: url("https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png") no-repeat center center fixed; */
+  /* background-image: src("../assets/cat.png"); */
+  height: 50%;
+}
+
 .colo{
   margin-top: 20px;
-  background-image: url('../assets/cat.png');
 }
 
 .coloo{
@@ -38,7 +45,7 @@ body {
   border:1px solid black;
 }
 
-.button .submit {
+.button-sign .submit {
   width: 660px;
   box-shadow: rgb(86, 86, 88) 3px 3px 2px;
   background-color: #FDC8C0;
