@@ -19,7 +19,7 @@ function CardPost(props) {
           <div>Castie</div>
         </div>
 
-        <img className="rounded-5 w-100" src={`https://www.99.co/blog/indonesia/wp-content/uploads/2022/08/Gambar-Masjid-Sederhana-1.jpg`} alt="" />
+        <img className="rounded-5 w-100" src={`https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png`} alt="" />
       </div>
     </div>
   );

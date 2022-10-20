@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEfect } from "react";
+
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import History from "../components/History";
@@ -21,7 +23,7 @@ function Home(props) {
         <div className="row align-items-start">
           <div className="col-8">
             <div className="border">
-              <Header />
+              <Header onNavigate={() => props.navigate(`/Detail/coba`)} />
               <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="w-100" />
             </div>
           </div>

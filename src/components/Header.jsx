@@ -7,9 +7,9 @@ import { CgProfile } from "react-icons/cg";
 import { NavDropdown } from "react-bootstrap";
 import { HiDotsVertical } from "react-icons/hi";
 
-function NavScroll() {
+function NavScroll(props) {
   return (
-    <Navbar expand="lg" className="background-header d-flex">
+    <Navbar expand="lg" className="background-header d-flex" onClick={props.onNavigate}>
       <Container fluid>
         <Navbar.Brand>
           <Link to="/" className="fw-bold text-black text-decoration-none">
