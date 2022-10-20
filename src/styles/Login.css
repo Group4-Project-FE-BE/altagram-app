@@ -4,14 +4,14 @@ body {
   background-color: #FBF8F8;
 }
 
-.form-container {
+.form-containers {
   display: flex;
   width: 100vw;
   height: 80vh;
   font-family: "Poppins";
 }
 
-.form-box {
+.form-boxs {
   max-width: 800px;
   padding: 30px;
   box-shadow: rgb(86, 86, 88) 3px 3px 4px 2px;
@@ -19,7 +19,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.login {
+.logins {
   display: flex;
   justify-content: center;
   font-family: "Poppins";
@@ -28,27 +28,27 @@ body {
   padding-bottom: 10px;
 }
 
-.form-container .title {
+.form-containers .titles {
   font-size: 16px;
   font-weight: bold;
   padding-top: 10px;
 }
 
-.username {
+.usernames {
   margin-bottom: 20px;
   box-shadow: rgb(86, 86, 88) 0px 2px 3px;
   height: 38px;
   font-size: 12px;
 }
 
-.password {
+.passwords {
   margin-bottom: 5px;
   box-shadow: rgb(86, 86, 88) 0px 2px 3px;
   height: 38px;
   font-size: 12px;
 }
 
-.button .submit {
+.buttons .submits {
   width: 390px;
   box-shadow: rgb(86, 86, 88) 3px 3px 2px;
   background-color: #FDC8C0;
@@ -56,7 +56,7 @@ body {
   margin-top: 30px;
 }
 
-.submit:hover {
+.submits:hover {
   background-color: #454152 !important;
 }
 

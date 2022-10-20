@@ -1,7 +1,9 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import "../styles/Register.css";
+import Image from 'react-bootstrap/Image';
 import { useTitle } from "utils/redux/UseTitle";
+
 
 const Register = () => {
   useTitle("Register | Altagram");
@@ -12,9 +14,7 @@ const Register = () => {
           <p className="text-right mt-2">
             Have an account? <a href="/login">Login</a>
           </p>
-          <span>
-            <img src="cat.png" className="img-fluid" />
-          </span>
+          <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="images row"></Image>
         </div>
         <div className="coloo col-8">
           <div className="border-form d-flex flex-column justify-content-center h-custom-2 w-75 pt-4">
@@ -34,19 +34,29 @@ const Register = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control className="box" type="password" placeholder="Password" />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
-
-              <div className="form-check text-right">
-                <input className="form-check-input text-right" type="checkbox" value="" id="flexCheckDefault" />
-                <label className="form-desc text-right" for="flexCheckDefault">
-                  I ve read and agree with <a href="#!"> Terms Of Service</a> and our <a href="#!">privacy policy</a>
-                </label>
-              </div>
-              <Form.Group className="button">
-                <Button className="submit text-black fw-bold" size="lg">
-                  Sign Up
-                </Button>
-              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="formBasicCheckbox"
+              ></Form.Group>
+            
+            <div className="form-check text-right">
+              <input
+                className="form-check-input text-right"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label className="form-desc text-right" for="flexCheckDefault">
+                I ve read and agree with{" "}
+                <a href="#!"> Terms Of Service</a>{" "}
+                and our{" "}<a href="#!">privacy policy</a>
+              </label>
+            </div>
+            <Form.Group className="button-sign">
+            <Button className="submit text-black fw-bold" size="lg">
+              Sign Up
+            </Button>
+            </Form.Group>
             </Form>
           </div>
         </div>

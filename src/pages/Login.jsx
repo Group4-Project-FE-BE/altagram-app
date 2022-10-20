@@ -6,22 +6,24 @@ const Login = () => {
   useTitle("Login | Altagram");
   return (
     <div>
-      <main className="form-container">
-        <Form className="form-box m-auto">
-          <h1 className="login">Login</h1>
-          <Form.Group className="title" controlId="formBasicEmail">
+      <main className="form-containers">
+        <Form className="form-boxs m-auto">
+          <h1 className="logins">Login</h1>
+          <Form.Group className="titles" controlId="formBasicEmail">
             <Form.Label>Username</Form.Label>
-            <Form.Control className="username" type="text" placeholder="Username" />
+            <Form.Control className="usernames" type="text" placeholder="Username" />
           </Form.Group>
-          <Form.Group className="title" controlId="formBasicPassword">
+          <Form.Group className="titles" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control className="password" type="password" placeholder="Password" />
+            <Form.Control className="passwords" type="password" placeholder="Password" />
           </Form.Group>
           <p className="forgot-password text-right mt-2">
             Forgot <a href="#">password?</a>
           </p>
-          <Form.Group className="button">
-            <Button className="submit text-black">Sign In</Button>
+          <Form.Group className="buttons">
+            <Button className="submits text-black fw-bold">
+              Sign In
+            </Button>
           </Form.Group>
         </Form>
       </main>
