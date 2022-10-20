@@ -19,7 +19,15 @@ const EditProfile = () => {
           <h1 className="title">Edit Profile</h1>
         </div>
         <div className="frame row">
-          <div className="col">
+          <div className="col-12">
+          <Card className="shadow-lg justify-center align-self-center col-4">
+                    <Image src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-2.jpg" style={{ width: "10rem", height: "10rem" }} className="row mx-auto my-2 image-fluid"></Image>
+                    <Form.Group controlId="formFile" className="mb-3">
+                        <Form.Label>Upload Gambar</Form.Label>
+                        <Form.Control type="file" />
+                    </Form.Group>
+                    Ukuran Maksimal Gambar adalah 1mb
+                </Card>
             <Card className="shadow-lg justify-center align-self-center col-4">
               <Image src="https://icon-library.com/images/no-profile-picture-icon/no-profile-picture-icon-2.jpg" style={{ width: "10rem", height: "10rem" }} className="row mx-auto my-2 image-fluid"></Image>
               <Form.Group controlId="formFile" className="mb-3">
