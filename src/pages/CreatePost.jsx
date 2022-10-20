@@ -30,7 +30,7 @@ function CreatePosting() {
           </div>
         </div>
         <div className="row border rounded p-2 m-0">
-          <div className="grid col-6">
+          <div className="grid col-lg-6">
             <div className="border h-75 rounded col-12 text-center mb-2">
               <iv className="row h-100 d-flex justify-content-center align-items-center">
                 <BiImageAdd />
@@ -43,11 +43,11 @@ function CreatePosting() {
               </Form.Group>
             </div>
           </div>
-          <div className="grid- col-6">
+          <div className="grid- col-lg-6">
             <div className="border rounded p-2">
-              <div className="d-flex align-items-center">
-                <div className="me-3">
-                  <img className="fotoprofil m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto rpofil" />
+              <div className="d-flex align-items-center my-sm-auto">
+                <div className="me-lg-3 ">
+                  <img className="fotoprofil m-lg-1 m-md-5" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto rpofil" />
                 </div>
                 <div>Castie</div>
               </div>

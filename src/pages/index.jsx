@@ -13,23 +13,24 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { useTitle } from "utils/redux/UseTitle";
+import ImagePosting from "components/ImagePosting";
 
 function Home(props) {
   useTitle("Home | Altagram");
   return (
     <>
-      <NavBar onNavigate={() => props.navigate(`/Detail/coba`)} />
+      <NavBar />
       <div className="container mt-5">
         <div className="row align-items-start">
-          <div className="col-8">
+          <div className="col-lg-6 mb-5">
             <div className="border">
-              <Header />
-              <div>
-                <Image src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" className="w-100" />
+              <div className="m-0 p-0 border">
+                <Header />
+                <ImagePosting onNavigate={() => props.navigate(`/Detail/coba`)} />
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="offset-lg-2 col-lg-4">
             <History />
             <h4 className="sugges">Suggestion for you</h4>
             <div className="sugges">

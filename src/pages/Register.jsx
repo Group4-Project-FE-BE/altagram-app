@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import "../styles/Register.css";
-import Image from "react-bootstrap/Image";
 import { useTitle } from "utils/redux/UseTitle";
 import CustomButton from "components/CostumButton";
 
@@ -59,7 +58,7 @@ function Register() {
   return (
     <div className="container mt-5 border">
       <div className="row ">
-        <div className="colo col-4">
+        <div className="colo col-lg-4">
           <p className="text-right mt-2">
             Have an account? <a href="/login">Login</a>
           </p>
@@ -67,23 +66,23 @@ function Register() {
             <img src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" alt="" className="w-100" />
           </div>
         </div>
-        <div className="coloo col-8">
+        <div className="coloo col-lg-8">
           <div className="border-form d-flex flex-column justify-content-center h-custom-2 w-75 pt-4">
             <h1 className="sign text-center">Sign In</h1>
             <form className="form-register" onSubmit={(e) => handleSubmit(e)}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>
-                <Form.Control className="box" type="name" placeholder="Your Name" onChange={(e) => setName(e.target.value)} />
+                <Form.Control className="box p-3" type="name" placeholder="Your Name" onChange={(e) => setName(e.target.value)} />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control className="box" type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} />
+                <Form.Control className="box p-3" type="email" placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control className="box" type="password" placeholder="Password" onChange={(e) => setPasword(e.target.value)} />
+                <Form.Control className="box p-3" type="password" placeholder="Password" onChange={(e) => setPasword(e.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
 

@@ -29,7 +29,7 @@ function EditPost() {
           </div>
         </div>
         <div className="row border rounded p-2 m-0">
-          <div className="grid col-6">
+          <div className="grid col-lg-6">
             <div className="border rounded col-12 text-center mb-2 d-flex justify-content-between align-items-center">
               <div></div>
               <div className="row d-flex justify-content-center align-items-center w-50">
@@ -40,7 +40,7 @@ function EditPost() {
               </div>
             </div>
           </div>
-          <div className="grid- col-6">
+          <div className="grid- col-lg-6">
             <div className="border rounded p-2 h-100">
               <div className="d-flex align-items-center">
                 <div className="me-3">

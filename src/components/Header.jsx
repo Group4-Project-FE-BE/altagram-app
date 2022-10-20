@@ -9,12 +9,17 @@ import { HiDotsVertical } from "react-icons/hi";
 
 function NavScroll(props) {
   return (
-    <Navbar expand="lg" className="background-header d-flex" onClick={props.onNavigate}>
+    <Navbar expand="lg" className="background-header d-flex">
       <Container fluid>
         <Navbar.Brand>
           <Link to="/" className="fw-bold text-black text-decoration-none">
             <Nav.Link href="#action2" className="love">
-              <CgProfile style={{ width: "32px", height: "32px" }} /> Cuttie
+              <div className="d-flex align-items-center p-2">
+                <div className="me-3">
+                  <img className="fotoprofil m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto rpofil" />
+                </div>
+                <div>Castie</div>
+              </div>
             </Nav.Link>
           </Link>
         </Navbar.Brand>
