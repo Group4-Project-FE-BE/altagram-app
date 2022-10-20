@@ -38,7 +38,6 @@ function Register() {
     axios
       .post(`http://13.212.207.162:8000/register`, body)
       .then((res) => {
-        console.log(res);
         const { message, data } = res.data;
         if (data) {
           navigate("/");

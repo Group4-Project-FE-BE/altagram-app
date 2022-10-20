@@ -16,10 +16,10 @@ function CardPost(props) {
           <div className="me-3">
             <img className="fotoprofil m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto rpofil" />
           </div>
-          <div>Castie</div>
+          <div>{props.nama}</div>
         </div>
 
-        <img className="rounded-5 w-100" src={`https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png`} alt="" />
+        <img className="rounded-5 w-100" src={`${props.gambar}`} alt="" />
       </div>
     </div>
   );
