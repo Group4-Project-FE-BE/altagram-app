@@ -20,7 +20,7 @@ const ListPosting = (props) => {
 
       <div>
         <Container>
-          <div className="grid col-4 py-5">
+          <div className="grid col-lg-4 py-lg-5 my-3">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button class="btn" type="submit">
@@ -29,28 +29,28 @@ const ListPosting = (props) => {
             </form>
           </div>
           <Row>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
-            <div className="grid col-3">
+            <div className="grid col-lg-3 col-md-4 col-sm-2">
               <CardPost onNavigate={() => props.navigate(`/Detail/coba`)} />
             </div>
           </Row>

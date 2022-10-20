@@ -1,8 +1,12 @@
 import React from "react";
 
 function CustomButton({ id, label, loading, onClick }) {
+  const btnCustom = {
+    backgroundColor: "#fdc8c0",
+  };
+
   return (
-    <button id={id} className={`button-sign submit text-black fw-bold w-100 ${loading && "bg-primary"}`} onClick={onClick} disabled={loading}>
+    <button id={id} style={btnCustom} className={`p-3 rounded text-black fw-bold w-100 ${loading && "bg-succes"}`} onClick={onClick} disabled={loading}>
       {label}
     </button>
   );
