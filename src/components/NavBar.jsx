@@ -33,10 +33,10 @@ function NavScroll() {
               <Nav.Link href="/" className="home">
                 <AiFillHome style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
-              <Nav.Link href="/ListPosting" className="love">
+              <Nav.Link href="/list-posting" className="love">
                 <AiOutlineHeart style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
-              <Nav.Link href="/CreatePost" className="notif">
+              <Nav.Link href="/create-post" className="notif">
                 <FiPlusSquare style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <NavDropdown title="Profile" id="navbarScrollingDropdown" className="profile">

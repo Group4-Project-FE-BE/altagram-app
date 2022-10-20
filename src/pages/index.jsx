@@ -17,12 +17,13 @@ function Home() {
   return (
     <>
       <NavBar />
-      <div className="p-2 font-blue"></div>
-      <div className="container">
+      <div className="container mt-5">
         <div className="row align-items-start">
           <div className="col-8">
-            <Header />
-            <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" style={{ width: "46rem", height: "30rem" }} className="image row mx-auto my-2 image-fluid"></Image>
+            <div className="border">
+              <Header />
+              <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="w-100" />
+            </div>
           </div>
           <div className="col-4">
             <History />
