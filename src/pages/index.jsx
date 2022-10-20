@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { useTitle } from "utils/redux/UseTitle";
 
-function Home() {
+function Home(props) {
   useTitle("Home | Altagram");
   return (
     <>

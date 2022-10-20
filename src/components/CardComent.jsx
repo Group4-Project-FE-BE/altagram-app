@@ -100,7 +100,7 @@ const CardComent = ({ slides }) => {
                         </div>
                         <div className="fw-bold">{slides[currentIndex].title}</div>
                       </div>
-                      <Link to="/ListPosting">
+                      <Link to="/list-posting">
                         <div className="m-5 c">
                           <AiFillCloseCircle style={close} />
                         </div>
