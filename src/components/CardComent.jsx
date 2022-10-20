@@ -86,7 +86,7 @@ const CardComent = ({ slides }) => {
           <div className="row" style={slideStyle}>
             <div className="grid offset-lg-1 col-lg-5 p-0 " style={backgroundPostingan}>
               <div className="row postinganFoto">
-                <img src={`${slides[currentIndex].url}`} style={postinganFoto} alt="postingan" />
+                <img src={`${slides[currentIndex].image_url}`} style={postinganFoto} alt="postingan" />
               </div>
             </div>
             <div className="grid col-lg-5 bg-white p-lg-0">
@@ -98,7 +98,7 @@ const CardComent = ({ slides }) => {
                         <div className="me-3">
                           <img className="fotoprofilcoment m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto profil" />
                         </div>
-                        <div className="fw-bold">{slides[currentIndex].title}</div>
+                        <div className="fw-bold">{slides[currentIndex].name_user}</div>
                       </div>
                       <Link to="/list-posting">
                         <div className="m-5 c">
@@ -107,21 +107,21 @@ const CardComent = ({ slides }) => {
                       </Link>
                     </div>
                     <div className="mt-4 ms-2">
-                      <p>Caption : oke masse</p>
+                      <p>{slides[currentIndex].content}</p>
                     </div>
                   </div>
                 </div>
                 <div className="p-2 bd-highlight w-100">
-                  <div>Komentar</div>
-                  <div className="d-flex align-items-center m-3">
+                  <div>Lihat Komentar</div>
+                  {/* <div className="d-flex align-items-center m-3">
                     <div className="me-3">
                       <img className="fotoprofil m-1" src="https://www.its.ac.id/it/wp-content/uploads/sites/46/2021/06/blank-profile-picture-973460_1280.png" alt="foto profil" />
                     </div>
                     <div>
-                      <div className="fw-bold">{slides[currentIndex].title}</div>
+                      <div className="fw-bold">{slides[currentIndex].coment}</div>
                       <div> ente kadang-kang ente</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div class="mt-auto p-2 bd-highlight w-100">
                   <textarea className="w-100 border-0 rounded" id="comment" placeholder="coment bro"></textarea>

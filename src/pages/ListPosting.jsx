@@ -27,12 +27,10 @@ const ListPosting = (props) => {
     axios
       .get(`https://virtserver.swaggerhub.com/Group4-Project-FE-BE/openapi_project2_team4/1.0.0/postings?offset=20&limit=20`)
       .then((res) => {
-        console.log(res);
         const { data } = res.data;
         const temp = [...datas];
         temp.push(...data);
         setData(temp);
-        console.log(temp);
       })
       .catch((err) => {
         alert(err.toString());
@@ -41,7 +39,6 @@ const ListPosting = (props) => {
         setLoading(false);
       });
   }
-  console.log(datas);
   return (
     <>
       <NavBar />
