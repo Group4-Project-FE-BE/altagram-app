@@ -57,13 +57,15 @@ function Register() {
   };
 
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container mt-5 border">
+      <div className="row ">
         <div className="colo col-4">
           <p className="text-right mt-2">
             Have an account? <a href="/login">Login</a>
           </p>
-          <Image src="https://o.remove.bg/downloads/0bfc7f12-42f7-4b60-9108-1d0490d64a5d/3683-removebg-preview.png" className="w-100"></Image>
+          <div className="w-100">
+            <img src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" alt="" className="w-100" />
+          </div>
         </div>
         <div className="coloo col-8">
           <div className="border-form d-flex flex-column justify-content-center h-custom-2 w-75 pt-4">
@@ -91,11 +93,7 @@ function Register() {
                   I ve read and agree with <a href="#!"> Terms Of Service</a> and our <a href="#!">privacy policy</a>
                 </label>
               </div>
-
               <CustomButton id="btn-register" label="Register" loading={loading || disabled} />
-              {/* <Button className="submit text-black fw-bold w-100" size="lg" onClick={(e) => handleSubmit(e)} loading={loading || disabled}>
-                  Sign Up
-                </Button> */}
             </form>
           </div>
         </div>

@@ -46,7 +46,7 @@ body {
 }
 
 .button-sign .submit {
-  width: 660px;
+  width: 100%;
   box-shadow: rgb(86, 86, 88) 3px 3px 2px;
   background-color: #fdc8c0;
   border: none;
