@@ -30,18 +30,18 @@ function NavScroll() {
             </Form>
 
             <Nav className="button-nav me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link href="#action1" className="home">
+              <Nav.Link href="/" className="home">
                 <AiFillHome style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
-              <Nav.Link href="#action2" className="love">
+              <Nav.Link href="/ListPosting" className="love">
                 <AiOutlineHeart style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <Nav.Link href="/CreatePost" className="notif">
                 <FiPlusSquare style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <NavDropdown title="Profile" id="navbarScrollingDropdown" className="profile">
-                <NavDropdown.Item href="#action1">DASHBOARD</NavDropdown.Item>
-                <NavDropdown.Item href="#action2">PROFIL</NavDropdown.Item>
+                <NavDropdown.Item href="/">DASHBOARD</NavDropdown.Item>
+                <NavDropdown.Item href="/profile">PROFIL</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/login">LOG OUT</NavDropdown.Item>
               </NavDropdown>

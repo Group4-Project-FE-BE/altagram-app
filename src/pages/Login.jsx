@@ -1,7 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 import "../styles/Login.css";
+import { useTitle } from "utils/redux/UseTitle";
 
 const Login = () => {
+  useTitle("Login | Altagram");
   return (
     <div>
       <main className="form-container">
@@ -27,7 +29,7 @@ const Login = () => {
         <Form className="form-signup m-auto">
           <p className="signup">
             Dont have an account?{" "}
-            <a className="sign" href="#">
+            <a className="sign" href="/register">
               Sign up
             </a>
           </p>

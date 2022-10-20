@@ -12,7 +12,7 @@ import { useTitle } from "utils/redux/UseTitle";
 import CardPost from "components/CardPost";
 
 const ListPosting = (props) => {
-  useTitle("List Posting | Altagram");
+  useTitle("Post | Altagram");
 
   return (
     <>

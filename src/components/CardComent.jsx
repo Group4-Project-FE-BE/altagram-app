@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -58,7 +58,7 @@ const CardComent = ({ slides }) => {
   };
 
   const backgroundPostingan = {
-    backgroundColor: `#6768AB`,
+    backgroundColor: ` #FDC8C0`,
   };
 
   const goToPrevious = () => {
@@ -100,7 +100,7 @@ const CardComent = ({ slides }) => {
                         </div>
                         <div className="fw-bold">{slides[currentIndex].title}</div>
                       </div>
-                      <Link to="/">
+                      <Link to="/ListPosting">
                         <div className="m-5 c">
                           <AiFillCloseCircle style={close} />
                         </div>
