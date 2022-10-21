@@ -53,7 +53,7 @@ const ListPosting = (props) => {
             </form>
           </div>
 
-          <div className="d-flex flex-row mb-3 ">
+          <div className="d-flex flex-cols-lg-3 mb-3 ">
             {loading ? <Skeleton /> : datas.map((datum) => <CardPost nama={datum.name_user} gambar={datum.image_url} onNavigate={() => props.navigate(`/Detail/coba`)} />)}
             <div className="g"></div>
           </div>
