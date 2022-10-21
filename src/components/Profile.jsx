@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "components/NavBar";
 import Button from "react-bootstrap/Button";
 import "../styles/EditProfile.css";
 import Form from "react-bootstrap/Form";
@@ -12,7 +11,7 @@ const Profile = ({ name, email, phone, gender, bio, location, password, onClickE
 
   return (
     <>
-      <Navbar />
+      <div>
       <div className="container-fluid">
         <div>
           <h1 className="title">Edit Profile</h1>
@@ -84,6 +83,7 @@ const Profile = ({ name, email, phone, gender, bio, location, password, onClickE
             </Button>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
