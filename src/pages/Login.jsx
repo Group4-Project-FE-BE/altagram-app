@@ -23,7 +23,7 @@ const Login = () => {
     axios .post("http://13.212.207.162:8000/login",userLogin)
     .then((res) => {
       setCookies('Token', res.data.data.token, { path: '/' });
-      navigate("/");
+      navigate("/home");
     })
     .catch(() => alert("Username / password salah"));
   }

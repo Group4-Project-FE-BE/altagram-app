@@ -59,7 +59,7 @@ function Register() {
       <div className="row ">
         <div className="colo col-lg-4">
           <p className="text-right mt-2">
-            Have an account? <a href="/login">Login</a>
+            Have an account? <a href="/">Login</a>
           </p>
           <div className="w-100">
             <img src="https://kitcat.com.sg/wp-content/uploads/2020/07/Kit-Cat.png" alt="" className="w-100" />

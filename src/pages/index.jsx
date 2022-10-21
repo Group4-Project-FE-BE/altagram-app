@@ -61,7 +61,7 @@ const Home = (props) =>  {
               <Container fluid className="sugges">
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> momosicatcute
                       </Nav.Link>
@@ -71,7 +71,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> catypely
                       </Nav.Link>
@@ -81,7 +81,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> mycatt
                       </Nav.Link>
@@ -91,7 +91,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> catloversss
                       </Nav.Link>
@@ -101,7 +101,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> catdonasiions
                       </Nav.Link>
@@ -111,7 +111,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> cattylion
                       </Nav.Link>
@@ -121,7 +121,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> cattylion
                       </Nav.Link>
@@ -131,7 +131,7 @@ const Home = (props) =>  {
 
                 <div className="account">
                   <Navbar.Brand>
-                    <Link to="/" className="fw-bold text-black text-decoration-none">
+                    <Link to="/home" className="fw-bold text-black text-decoration-none">
                       <Nav.Link href="#action2" className="love">
                         <CgProfile style={{ width: "32px", height: "32px" }} /> cattylion
                       </Nav.Link>
