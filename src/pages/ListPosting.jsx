@@ -15,7 +15,6 @@ import Skeleton from "react-loading-skeleton";
 const ListPosting = (props) => {
   const [datas, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [next, setNext] = useState(0);
 
   useTitle("Post | Altagram");
 
@@ -54,9 +53,9 @@ const ListPosting = (props) => {
             </form>
           </div>
 
-          <div className="d-flex flex-lg-cols-5 flex-md-cols-3 flex-sm-cols-5 mb-3 w-full border">
+          <div className="d-flex flex-cols-lg-3 mb-3 ">
             {loading ? <Skeleton /> : datas.map((datum) => <CardPost nama={datum.name_user} gambar={datum.image_url} onNavigate={() => props.navigate(`/Detail/coba`)} />)}
-            <div className="grid col-lg-3 col-md-4 col-sm-2"></div>
+            <div className="g"></div>
           </div>
         </Container>
       </div>
