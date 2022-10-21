@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Profile from "../components/Profile";
+import Navbar from "../components/NavBar";
 
 function EditProfile() {
   const urlApi = "https://virtserver.swaggerhub.com/Group4-Project-FE-BE/openapi_project2_team4/1.0.0/users";
@@ -70,6 +71,7 @@ function EditProfile() {
 
   return (
     <>
+    <Navbar/>
       <section>
         <Container className="my-5 px-auto rounded border-main justify-center align-items-center">
           <div className="row mx-auto">
