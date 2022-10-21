@@ -12,7 +12,7 @@ function NavScroll(props) {
     <Navbar expand="lg" className="background-header d-flex">
       <Container fluid>
         <Navbar.Brand>
-          <Link to="/" className="fw-bold text-black text-decoration-none">
+          <Link to="/home" className="fw-bold text-black text-decoration-none">
             <Nav.Link href="#action2" className="love">
               <div className="d-flex align-items-center p-2">
                 <div className="me-3">
@@ -32,7 +32,7 @@ function NavScroll(props) {
                   <NavDropdown.Item href="/edit">Edit</NavDropdown.Item>
                   <NavDropdown.Item href="#">Delete</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/">Batal</NavDropdown.Item>
+                  <NavDropdown.Item href="/home">Batal</NavDropdown.Item>
                 </NavDropdown>
               </div>
             </Nav>

@@ -17,7 +17,7 @@ function CardEditPost(props) {
               <p className="text-center fw-bold">Edit Post</p>
             </div>
             <div>
-              <Link to={"/"}>
+              <Link to={"/home"}>
                 <AiFillCloseCircle />
               </Link>
             </div>

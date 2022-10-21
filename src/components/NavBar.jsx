@@ -15,7 +15,7 @@ function NavScroll() {
     <Navbar expand="lg" className="background-nav d-flex">
       <Container fluid>
         <Navbar.Brand>
-          <Link to="/" className="fw-bold text-black text-decoration-none">
+          <Link to="/home" className="fw-bold text-black text-decoration-none">
             Altagram
           </Link>
         </Navbar.Brand>
@@ -30,7 +30,7 @@ function NavScroll() {
             </form>
 
             <Nav className="button-nav me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link href="/" className="home">
+              <Nav.Link href="/home" className="home">
                 <AiFillHome style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <Nav.Link href="/list-posting" className="love">
@@ -40,10 +40,10 @@ function NavScroll() {
                 <FiPlusSquare style={{ width: "26px", height: "26px" }} />
               </Nav.Link>
               <NavDropdown title="Profile" id="navbarScrollingDropdown" className="profile">
-                <NavDropdown.Item href="/">DASHBOARD</NavDropdown.Item>
+                <NavDropdown.Item href="/home">DASHBOARD</NavDropdown.Item>
                 <NavDropdown.Item href="/profile">PROFIL</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/login">LOG OUT</NavDropdown.Item>
+                <NavDropdown.Item href="/">LOG OUT</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

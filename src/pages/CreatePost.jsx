@@ -23,7 +23,7 @@ function CreatePosting() {
               <p className="text-center fw-bold">Create Post</p>
             </div>
             <div>
-              <Link to={"/"}>
+              <Link to={"/home"}>
                 <AiFillCloseCircle />
               </Link>
             </div>
