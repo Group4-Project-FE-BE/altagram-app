@@ -20,7 +20,7 @@ const Profile = ({ name, email, phone, gender, bio, location, password, onClickE
         <div className="frame row">
           <div className="col">
             <FileUpload />
-          </div> 
+          </div>
           <div className="col">
             <Form onClickEdit={(e) => handleEdit(e)}>
               <Form.Group className="mb-3" controlId="formBasicEmail" value={name || ""} onClick={onClickEdit}>
@@ -28,7 +28,7 @@ const Profile = ({ name, email, phone, gender, bio, location, password, onClickE
                 <Form.Control type="text" placeholder="cattie" />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicEmail"value={email || ""} onClick={onClickEdit}>
+              <Form.Group className="mb-3" controlId="formBasicEmail" value={email || ""} onClick={onClickEdit}>
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="user@gmail.com" />
               </Form.Group>

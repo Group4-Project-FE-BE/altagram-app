@@ -22,7 +22,7 @@ const PageComent = (props) => {
 
   function fetchData() {
     axios
-      .get(`https://virtserver.swaggerhub.com/Group4-Project-FE-BE/openapi_project2_team4/1.0.0/postings?offset=20&limit=20`)
+      .get(`http://13.212.207.162:8000/postings/`)
       .then((res) => {
         console.log(res);
         const { data } = res.data;
